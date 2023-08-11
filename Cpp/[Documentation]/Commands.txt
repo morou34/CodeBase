@@ -1,0 +1,2 @@
+compiler version: g++ –version
+compiling command: g++ -o main.exe hello.cpp

@@ -1,0 +1,4 @@
+check all conda environment: conda env list
+
+open jupyter notebook in a specific folder:
+cd to path and type jupyter notebook

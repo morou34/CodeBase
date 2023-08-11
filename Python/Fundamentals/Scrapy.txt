@@ -1,0 +1,92 @@
+___________________________________________
+installation of scrapy:
+pip install scrapy==1.6 pylint autopep8
+___________________________________________
+get all available commands:
+scrapy
+___________________________________________
+create new folder to store projects:
+mkdir foldername | eg. mkdir myproject
+___________________________________________
+create new project:
+scrapy startproject name_of_project
+eg: scrapy startproject worldometers
+___________________________________________
+creating a spider:
+scrapy genspider countries www.worldometers.info/world-population/population-by-country
+___________________________________________
+CSS Selectors:
+
+>> a elements starts with 'https'
+	a[href^='https']
+
+>> a elements ends with 'fr'
+	a[href$='fr']
+
+>> a elements that has 'googel' somewhere
+	a[href*='google']
+
+>> all p inside div with class attr intro
+	div.intro p
+
+>> all children inside the div with class attr intro
+	div.intro > p
+
+>> get first p element after the div with class attr intro
+	div.intro + p
+
+>> get a specific element of a list li
+	li:nthchild(position)
+	li:nthchild(odd)
+	li:nthchild(even)
+
+>> multiple elements selection
+
+	item1, item2
+
+>> item with multiple IDs or class attributes
+	.class.class
+	#id#id
+___________________________________________
+
+XPath expressions
+//div[@class='intro']/p
+//div[@class='intro']/p/text()
+//div[@class='intro' or @class='outro']/p/text() 
+
+>> get text of the link : //a/text()
+>> getting the links: //a/@href
+
+>> getting link that starts with 'https'
+//a[starts-with(@href,'https')]  
+agr1: where do you want to look 
+arg2: what to look for
+
+>> //a[ends-with(@href,'fr')]
+
+>> //a[contains(@href,'google')]
+
+>> //a[contains(text(),'France')]
+
+>> Getting items from a list
+//ul[@id='items']/li : all elements
+//ul[@id='items']/li[1] : first element
+//ul[@id='items']/li[position()= 1 or position()=4] : 1st and 4th element
+
+position()>1: get all items > item 1
+position()=last : gets the last element 
+___________________________________________
+
+exporting data:
+scrapy crawl countries -o population_dataset.json
+
+
+
+
+
+
+
+
+
+
+
