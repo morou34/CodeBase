@@ -8,4 +8,4 @@ In this repository, you'll find:
 - 📝 Detailed notes capturing key concepts and insights
 - 🌟 Exciting discoveries and learnings along the way
 
-Join me as I embark on this adventure of learning, coding, and exploring the intersection of technology and intelligence. Let's code for the future! 💡🌏 #CodeToAI #LearningJourney
+Join me as I embark on this adventure of learning, coding, and exploring the intersection of technology and intelligence. Let's code for the future! 💡🌏  #LearningJourney
