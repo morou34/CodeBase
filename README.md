@@ -1,4 +1,4 @@
-## Code to AI Learning Repository 🚀🤖
+## Learning Repository 🚀🤖
 
 Welcome to my GitHub repository where I'm documenting my journey from Web Development to Artificial Intelligence. 🌐🧠
 
